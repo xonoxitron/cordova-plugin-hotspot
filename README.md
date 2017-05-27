@@ -11,68 +11,62 @@ Linkedin: http://www.linkedin.com/in/matteopisani
 ```
 
 ## Description
-This plugin allows developer to manage Taptic Engine feedback of supported Apple devices.
-With a simple call to the "TapticEngine" object, vibration can be performed.
-
-## Supported Devices (Apple)
-- iPhone 7
-- iPhone 7 Plus
-- iPhone 6S
-- iPhone 6S Plus
-- iPad Pro
+This plugin allows developer to manage WiFi/Internet/Tethering/HotSpot on Google Android devices.
+With a simple call to the "hotspot" object, users can:
+* set up a hotspot
 
 ## Supported OS
-- iOS >= 9.0
+- Android >= 6.0 Marshmallow / 7.0 Noughat
 
 ## Starting
 Create a new Cordova Project
 
-    $ cordova create TapticEngineApplication com.development.tapticengine TapticEngineApplication
+    $ cordova create HotSpotApplication com.development.hotspot HotSpotApplication
 
 ## Installing the plugin (from GIT)
 Clone the plugin
 
-    $ git clone https://github.com/xonoxitron/cordova-plugin-tapticengine.git
+    $ git clone https://github.com/xonoxitron/cordova-plugin-hotspot.git
 
 Install the plugin
 
-    $ cd TapticEngineApplication
-    $ cordova -d plugin add ../cordova-plugin-tapticengine
+    $ cd HotSpotApplication
+    $ cordova -d plugin add ../cordova-plugin-hotspot
 
 Or alternatively
 
 ## Installing the plugin (from NPM)
 Clone the plugin
 
-    $ cd TapticEngineApplication
-    $ git clone cordova-plugin-tapticengine
+    $ cd HotSpotApplication
+    $ git clone cordova-plugin-hotspot
 
 ## Using
-Edit `~/TapticEngineApplication/www/yourfile.js` and add the following code inside or after that `onDeviceReady` event has been triggered
+Edit `~/HotSpotApplication/www/yourfile.js` and add the following code inside or after that `onDeviceReady` event has been triggered
 
 ```js
-document.addEventListener('touchstart',function()
+document.addEventListener('deviceready',function()
 {
-  TapticEngine.generateTapticFeedback(); // perform a vibration
+
 },false);
 ```
 
 ## Testing
-Install iOS platform
+Install Andfroid platform
 
-    cordova platform add ios
+    cordova platform add android
 
 Run the code
 
-    cordova run ios
+    cordova run android
 
 Or
 
-    cordova run ios --device
+    cordova run android --device
 
 ## Test Application
-- Inside the path `~/cordova-plugin-tapticengine/test/TapticEngineApplication` there's the `XCode iOS` test application,
+- Inside the path `~/cordova-plugin-hotspot/test` there's the `Cordova Android` test application,
 just open it, build it, connect your device and deploy it in.
-- When test application opens `TapticEngine (object)` will be created.
-- Cordova core brings to JavaScript the object in question exposing private API of `UITapticEngine` Class.
-- By pressing the touchscreen, if your device is supported, you should feed TapticEngine vibration performed under your finger.
+- When the `test` application opens, `hotspot` object will be created.
+- Cordova core brings to JavaScript the object in question exposing private API of `Java` Class.
+- By pressing the `Enable HotSpot` button, if your device is supported, after `SSID` and `Password` have been set, you should see the `HotSpot` icon appearing on the status bar.
