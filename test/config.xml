@@ -2,7 +2,7 @@
 <widget id="hotspot.plugin.cordova" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>cordova-plugin-hotspot</name>
     <description>
-        WiFi/Internet/Tethering HotSpot Plugin For Android
+        Cordova Plugin for handling WiFi/Internet/Tethering HotSpot functionalities on Android devices
     </description>
     <author href="https://github.com/xonoxitron/cordova-plugin-hotspot">
         Matteo Pisani <matteo.pisani.91@gmail.com> (https://www.linkedin.com/in/matteopisani)
