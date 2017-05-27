@@ -1,7 +1,20 @@
 {
   "name": "cordova-plugin-hotspot",
+  "displayName" : "cordova-plugin-hotspot",
   "version": "1.0.0",
-  "description": "WiFi/Internet HotSpot Plugin For Android",
+  "description": "WiFi/Internet/Tethering HotSpot Plugin For Android",
+  "cordova": {
+        "platforms": [
+            "android"
+        ],
+        "plugins": {
+            "cordova-plugin-whitelist": {}
+        }
+    },
+    "dependencies": {
+        "cordova-android": "~6.2.3",
+        "cordova-plugin-whitelist": "1"
+    },
   "main": "www/cordova-plugin-hotspot.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -20,7 +33,7 @@
     "phonegap",
     "ionic"
   ],
-  "author": "Matteo Pisani <matteo.pisani.91@gmail.com> (https://www.linkedin.com/in/matteopisani)",
+  "author": "Matteo Pisani <matteo.pisani.91@gmail.com> (https://www.linkedin.com/in/matteopisani) & Christopher Dedominici <dedominici.ch@gmail.com> (https://www.linkedin.com/in/christopher-dedominici)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/xonoxitron/cordova-plugin-hotspot/issues"

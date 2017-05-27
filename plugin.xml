@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	id="cordova-plugin-hotspot"
+	version="1.0.0">
+
+  <description>
+    WiFi/Internet/Tethering HotSpot Plugin For Android
+  </description>
+  <author href="https://github.com/xonoxitron/cordova-plugin-hotspot">
+    Matteo Pisani <matteo.pisani.91@gmail.com> (https://www.linkedin.com/in/matteopisani)
+    Christopher Dedominici <dedominici.ch@gmail.com> (https://www.linkedin.com/in/christopher-dedominici)
+  </author>
+	<license>MIT</license>
+
+	<engines>
+    <engine name="cordova" version=">=6.0" />
+	</engines>
+
+    <js-module src="www/hotspot.js" name="hotspot">
+      <clobbers target="window.plugins.hotspot" />
+    </js-module><!--  -->
+
+    <!-- android -->
+    <platform name="android">
+      <config-file target="res/xml/config.xml" parent="/*">
+        <feature name="hotspot">
+          <param name="android-package" value="hotspot.plugin.cordova.hotspot"/>
+        </feature>
+      </config-file>
+      <config-file target="AndroidManifest.xml" parent="/*">
+        <uses-permission name="android.permission.WRITE_SETTINGS" platform="android" />
+        <uses-permission name="android.permission.INTERNET" platform="android" />
+        <uses-permission name="android.permission.ACCESS_NETWORK_STATE" platform="android" />
+        <uses-permission name="android.permission.CHANGE_NETWORK_STATE" platform="android" />
+        <uses-permission name="android.permission.ACCESS_WIFI_STATE" platform="android" />
+        <uses-permission name="android.permission.CHANGE_WIFI_STATE" platform="android" />
+      </config-file>
+
+      <source-file src="src/android/hotspot.java" target-dir="src/hotspot/plugin/cordova" />
+    </platform>
+
+</plugin>
