@@ -1,0 +1,29 @@
+{
+  "name": "cordova-plugin-hotspot",
+  "version": "1.0.0",
+  "description": "WiFi/Internet HotSpot Plugin For Android",
+  "main": "www/cordova-plugin-hotspot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xonoxitron/cordova-plugin-hotspot.git"
+  },
+  "keywords": [
+    "android",
+    "thetering",
+    "hotspot",
+    "wifi",
+    "internet",
+    "cordova",
+    "phonegap",
+    "ionic"
+  ],
+  "author": "Matteo Pisani <matteo.pisani.91@gmail.com> (https://www.linkedin.com/in/matteopisani)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xonoxitron/cordova-plugin-hotspot/issues"
+  },
+  "homepage": "https://github.com/xonoxitron/cordova-plugin-hotspot#readme"
+}
