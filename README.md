@@ -7,9 +7,9 @@
 ```
 Matteo Pisani
 	E-mail: matteo.pisani.91@gmail.com
-	Linkedin: [http://www.linkedin.com/in/matteopisani](http://www.linkedin.com/in/matteopisani)	
+	<a href="http://www.linkedin.com/in/matteopisani">Linkedin: http://www.linkedin.com/in/matteopisani</a
 Dedominici Christopher
-	Linkedin: [https://www.linkedin.com/in/christopher-dedominici](https://www.linkedin.com/in/christopher-dedominici)
+	<a href="https://www.linkedin.com/in/christopher-dedominici">Linkedin: https://www.linkedin.com/in/christopher-dedominici</a>
 ```
 
 ## Description
