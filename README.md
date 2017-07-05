@@ -4,13 +4,12 @@
 <img src="https://github.com/xonoxitron/cordova-plugin-hotspot/blob/master/cordova-plugin-hotspot.png?raw=true" width="300"/>&nbsp;
 
 ## Author
-```
-Matteo Pisani
-	E-mail: matteo.pisani.91@gmail.com
-	<a href="http://www.linkedin.com/in/matteopisani">Linkedin: http://www.linkedin.com/in/matteopisani</a
-Dedominici Christopher
-	<a href="https://www.linkedin.com/in/christopher-dedominici">Linkedin: https://www.linkedin.com/in/christopher-dedominici</a>
-```
+* Matteo Pisani
+	<br>E-mail: matteo.pisani.91@gmail.com
+	<br>Linkedin profile: [http://www.linkedin.com/in/matteopisani](http://www.linkedin.com/in/matteopisani)
+
+* Dedominici Christopher
+	<br>Linkedin profile: [https://www.linkedin.com/in/christopher-dedominici](https://www.linkedin.com/in/christopher-dedominici)
 
 ## Description
 This plugin allows developer to manage WiFi/Internet/Tethering/HotSpot on Google Android devices.
