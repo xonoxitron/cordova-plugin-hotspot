@@ -1,10 +1,13 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="hotspot.plugin.cordova" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.hotspottest.myapp" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <feature name="Whitelist">
         <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
         <param name="onload" value="true" />
     </feature>
-    <name>test</name>
+    <feature name="HotSpotManager">
+        <param name="android-package" value="com.android.plugin.HotSpotManager" />
+    </feature>
+    <name>hotspottest</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
     </description>

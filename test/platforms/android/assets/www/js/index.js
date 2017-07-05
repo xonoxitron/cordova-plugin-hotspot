@@ -1,46 +1,39 @@
-/*
- * Licensed to the Apache Software Foundation (ASF) under one
- * or more contributor license agreements.  See the NOTICE file
- * distributed with this work for additional information
- * regarding copyright ownership.  The ASF licenses this file
- * to you under the Apache License, Version 2.0 (the
- * "License"); you may not use this file except in compliance
- * with the License.  You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing,
- * software distributed under the License is distributed on an
- * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
- * KIND, either express or implied.  See the License for the
- * specific language governing permissions and limitations
- * under the License.
- */
-var app = {
-    // Application Constructor
-    initialize: function() {
-        document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
-    },
+enable.addEventListener("click", function() {
 
-    // deviceready Event Handler
-    //
-    // Bind any cordova events here. Common events are:
-    // 'pause', 'resume', etc.
-    onDeviceReady: function() {
-        this.receivedEvent('deviceready');
-    },
+	const PASS_LENGTH = 8;
+	const SSID_LENGTH = 4; 
+	var password;
+	var ssid;
 
-    // Update DOM on a Received Event
-    receivedEvent: function(id) {
-        var parentElement = document.getElementById(id);
-        var listeningElement = parentElement.querySelector('.listening');
-        var receivedElement = parentElement.querySelector('.received');
+	ssid = document.getElementById('ssid').value;
+	password = document.getElementById('password').value;
 
-        listeningElement.setAttribute('style', 'display:none;');
-        receivedElement.setAttribute('style', 'display:block;');
+	if(ssid.length < SSID_LENGTH ){
+		alert("ssid must have at least " + SSID_LENGTH + " characters");
+		return -1;
+	}
+	if(password.length < PASS_LENGTH ){
+		alert("password must have at least " + PASS_LENGTH + " characters");
+		return -1;
+	}
 
-        console.log('Received Event: ' + id);
-    }
-};
+	var param = {
+		ssid: ssid,
+		password: password
+	};
 
-app.initialize();
+	cordova.plugins.hotSpotManager.enableAccessPoint(param, function(res){
+		alert("hotSpotEnabled: " + res);
+	}, function(err){
+		alert("ERROR: " + err);
+	});
+});
+
+disable.addEventListener("click", function() {
+
+	cordova.plugins.hotSpotManager.disableAccessPoint(function(res){
+		alert("ap is disabled: " + res);
+	}, function(){
+		alert("ERR: cannot disable ap");
+	});
+});	

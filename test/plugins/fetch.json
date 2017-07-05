@@ -6,5 +6,13 @@
         },
         "is_top_level": true,
         "variables": {}
+    },
+    "cordova-plugin-android-hotspotmanager": {
+        "source": {
+            "type": "local",
+            "path": "/home/chris/Desktop/test/hotspottest/node_modules/cordova-plugin-hotspot"
+        },
+        "is_top_level": true,
+        "variables": {}
     }
 }
