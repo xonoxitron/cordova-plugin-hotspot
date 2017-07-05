@@ -6,10 +6,10 @@
 ## Author
 ```
 Matteo Pisani
-E-mail: matteo.pisani.91@gmail.com
-Linkedin: http://www.linkedin.com/in/matteopisani
+	E-mail: matteo.pisani.91@gmail.com
+	Linkedin: [http://www.linkedin.com/in/matteopisani](http://www.linkedin.com/in/matteopisani)	
 Dedominici Christopher
-Linkedin: https://www.linkedin.com/in/christopher-dedominici
+	Linkedin: [https://www.linkedin.com/in/christopher-dedominici](https://www.linkedin.com/in/christopher-dedominici)
 ```
 
 ## Description
