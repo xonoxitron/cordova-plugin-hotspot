@@ -20,8 +20,6 @@
             "cordova-plugin-whitelist": {},
             "cordova-plugin-android-hotspotmanager": {}
         },
-        "platforms": [
-            "android"
-        ]
+        "platforms": []
     }
 }
