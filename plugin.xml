@@ -5,8 +5,8 @@
 	version="1.0.0">
 
   	<name>HotSpotManager</name>
-	<description>Cordova plugin to manage HotSpot/Tethering</description>
-	<author>Matteo Pisani & Christopher Dedominici</author>
+	<description>Cordova plugin to manage HotSpot or Tethering</description>
+	<author>Matteo Pisani and Christopher Dedominici</author>
 	<license>MIT</license>
 
 	<engines>
